@@ -1,4 +1,4 @@
-"You can view the portfolio by clicking on the link below:
+"You can view the Stopwatch web application by clicking on the link below:
 
 Link - " https://karanprasad2706.github.io/PRODIGY_WD_02/ "
 
