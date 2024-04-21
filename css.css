@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom, rgb(0, 123, 255), rgb(58, 80, 107)); /* Replace with your desired RGB values */
+    background: linear-gradient(to bottom, rgb(0, 123, 255), rgb(58, 80, 107));
     margin: 0;
     display: flex;
     justify-content: center;
@@ -8,10 +8,9 @@ body {
     height: 100vh;
 }
 
-
 .stopwatch {
-    background-color: rgba(193, 189, 189, 0.934); /* Grey color with transparency */
-    backdrop-filter: blur(10px); /* Adjust the blur effect */
+    background-color: rgba(193, 189, 189, 0.934);
+    backdrop-filter: blur(10px);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -19,9 +18,6 @@ body {
     max-width: 400px;
     width: 100%;
 }
-
-/* Rest of your existing CSS remains unchanged */
-
 
 .time {
     font-size: 3em;
@@ -45,7 +41,6 @@ button {
     transition: background-color 0.3s ease;
 }
 
-
 .watch-icon {
     display: flex;
     justify-content: center;
@@ -55,24 +50,23 @@ button {
 }
 
 .watch-icon i {
-    transform-origin: 50% 50%; /* Set the rotation origin to the center */
+    transform-origin: 50% 50%;
     transition: transform 0.3s ease;
 }
 
 .watch-icon.rotate i {
-    transform: rotate(180deg); /* Rotate 90 degrees vertically */
+    transform: rotate(180deg);
 }
 
 button:hover {
     background-color: #2980b9;
 }
 
-
 .laps, .history {
     margin-top: 20px;
     text-align: left;
-    max-height: 150px; /* Set a maximum height for the container */
-    overflow-y: auto; /* Add a vertical scrollbar when content overflows */
+    max-height: 150px;
+    overflow-y: auto;
 }
 
 .laps div, .history div {
@@ -82,8 +76,6 @@ button:hover {
     border-radius: 5px;
 }
 
-
-
 .controls button i {
     margin-right: 5px;
     transition: transform 0.3s ease;
@@ -91,4 +83,21 @@ button:hover {
 
 .controls button.rotate i {
     transform: rotate(180deg);
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+    .stopwatch {
+        max-width: 90%;
+    }
+    .time {
+        font-size: 2.5em;
+    }
+    .controls button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+    .watch-icon {
+        margin-bottom: 10px; 
+    }
 }
